@@ -1,92 +1,97 @@
-* {
-    box-sizing: border-box;
-  }
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
   
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: #13293d;
     color: #fff;
-  }
+}
   
-  nav {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  nav ul {
+   
+nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-  }
-
-  nav a {
+ }
+  
+nav a {
     color: #b9C6ae;
     font-weight: bold;
     text-decoration: none;
-  }
+}
   
-  main {
+main {
     display: flex;
-  }
+    flex: 1 1 0;
+    max-width: 1200px;
+    margin: 2% auto;
+}
   
-  aside {
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
+section {
+    flex: 1 1 0;
+    padding-right: 5%;
+}
+
+.content-titles {
+    font-size: larger;
+}
   
-  section {
-    flex: 70%;
-    background-color: #fff;
-    padding: 20px;
-  }
+article {
+    border-bottom: 1px solid #d8a47f;
+}
   
-  footer {
+article p {
+    margin: 2% 0;
+    font-size: 110%;
+}
+  
+article ul {
+    margin-left: 5%;
+    font-size: 110%;
+    list-style: circle;
+}
+
+aside {
+    width: 25%;
+}
+  
+  
+
+  
+footer {
     padding: 20px;
     text-align: center;
     background: #13293d;
     color: #fff;
-  }
+}
   
   /* Image Placeholders */
-  .sample-img {
+.sample-img {
     background-color: #fff;
     width: 100%;
     padding: 20px;
     height: 200px;
     border: 1px solid black;
-  }
-  
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-  
-  /* Tablets - header changes color */
-  @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
+}
+   
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
     }
-  }
   
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
+    section {
+      padding-right: 0;
     }
-  }
   
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
+    aside {
+      width: 100%;
+      text-align: center;
     }
-  }
+}
   
