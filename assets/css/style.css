@@ -25,14 +25,29 @@ nav a {
     font-weight: bold;
     text-decoration: none;
 }
-  
+
+.banner {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/jakob-rosen-R3Kt-VGPwUI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: none
+}
+
 main {
     display: flex;
     flex: 1 1 0;
     max-width: 1200px;
     margin: 2% auto;
 }
-  
+
+.projects{
+    margin: 50px auto;
+        
+}
+
 section {
     flex: 1 1 0;
     padding-right: 5%;
