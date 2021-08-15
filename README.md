@@ -30,4 +30,4 @@ I expect to make some changes in the future with this website. I plan to create 
 https://wstaylor27.github.io/WST-Portfolio/
 
 ## Screenshot
-![Description of Screenshot](assets/images/horiseon-launch-page-ss.png)
+![Description of Screenshot](assets/images/wstaylor27.github.io_WST-Portfolio_SS.png)
