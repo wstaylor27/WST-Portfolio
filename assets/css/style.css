@@ -1,25 +1,28 @@
 body {
-    display: flex;
-    flex-direction: column;
     line-height: 1.3;
 }
 
 
 /* Header */
 header {
-    display: flex;
     justify-content: space-between;
     padding: 3%;
     background-color: rgb(71 107 117);
     color: #fff;
+    text-align: center;
 }
 
 /* Links in Header */
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
+nav {
+    display:flex;
 }
+
+nav ul {
+    display: inherit;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
   
 nav a {
     color: #ffffff;
@@ -30,7 +33,7 @@ nav a {
 /* Banner below the header */
 .banner {
     height: 300px;
-    width: 100%;
+    flex: 100%;
     margin-bottom: 25px;
     background-image: url(../images/jakob-rosen-R3Kt-VGPwUI-unsplash.jpg);
     background-size: cover;
@@ -46,16 +49,17 @@ main {
 
 /* Aside content titles */
 aside {
-    width:25%;
-    padding-right: 50px;
+    flex:25%;
+    padding-right: 35px;
     padding-top: 25px;
+    flex-wrap: wrap;
     
 }
 
-aside h3 {
+aside h4 {
     border-right: 5px solid rgb(12, 83, 150);
     padding-right: 20px;
-    font-size: 200%;
+    font-size: 150%;
     text-align: right;
     color: rgb(12, 83, 150);
 }
@@ -65,7 +69,7 @@ aside h3 {
 }
 
 .about-me .text {
-    width: 71%;
+    width: 75%;
 }
 
 
@@ -97,7 +101,7 @@ article ul {
 }
 
 .projects-content {
-    width: 75%;
+    flex: 75%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -108,16 +112,16 @@ article ul {
     left: 0px;
     background-color: rgb(71 107 117);
     color: rgb(180 224 255);
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+    
 }
 
 
 .one {
     border: 15px solid rgb(71 107 117);
-    width: 95%;
-    margin: 10px;
+    width: 98%;
+    margin: 1%;
     height: 360px;
     position: relative;
 }
@@ -137,9 +141,9 @@ article ul {
 
 .card {
     border: 15px solid rgb(71 107 117);
-    width: 46.5%;
+    width: 48%;
+    margin: 1%;
     height: 250.14px;
-    margin: 10px;
     position: relative;
 }
 
@@ -159,17 +163,16 @@ article ul {
 /* Contact Area */
 .contact {
     display: flex;
-    justify-content: space-between;
-    padding: 3%;
+    
 }
 
 
 .contact ul {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 195px;
     align-items: center;
-    width: 72%;
+    flex:75%;
 }
 
 
@@ -181,10 +184,30 @@ footer {
     color: #fff;
 }
   
-   
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     header {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    main, nav, header, ul {
       flex-direction: column;
     }
-  
+      
 }
+
+@media screen and (max-width: 1262px) {
+.projects-content .card {
+    flex: 1 0 40%;
+    }
+}
+
+@media screen and (max-width: 1262px) {
+    .projects-content .one {
+        flex: 1 0 70%;
+        }
+    }
+
