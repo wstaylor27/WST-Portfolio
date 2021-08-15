@@ -27,7 +27,7 @@ I expect to make some changes in the future with this website. I plan to create 
 
 ## URL
 
-https://wstaylor27.github.io/Horiseon-Launch-Page/
+https://wstaylor27.github.io/WST-Portfolio/
 
 ## Screenshot
 ![Description of Screenshot](assets/images/horiseon-launch-page-ss.png)
