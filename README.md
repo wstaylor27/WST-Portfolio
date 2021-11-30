@@ -25,6 +25,10 @@ Comments were added for clarity. I also added some spacing for legibility purpos
 
 I expect to make some changes in the future with this website. I plan to create aside sections as child elements to a section parent element. Or on the other hand, use grid boxes so that I may dictate where elements are located.
 
+## 9.29.21 UPDATE
+
+I updated the links to include new projects. I plan to update the styling in the near future.
+
 ## URL
 
 https://wstaylor27.github.io/WST-Portfolio/
