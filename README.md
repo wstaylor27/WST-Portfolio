@@ -29,6 +29,10 @@ I expect to make some changes in the future with this website. I plan to create 
 
 I updated the links to include new projects. I plan to update the styling in the near future.
 
+## 12.09.21 UPDATE
+
+I resize and reorganized my cards. I plan to include more styling and animation. I also plan to resize all the photos to improve performance of the site.
+
 ## URL
 
 https://wstaylor27.github.io/WST-Portfolio/
